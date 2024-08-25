@@ -8,3 +8,5 @@ Para correr el Fuzzer, se necesita crear dos archivos necesariamente, que en est
 
 ## 3. Ejecución
 Una vez configurados y listos todos los archivos, se corre el comando ```py infra/helper.py build_image --pull deber_act3``` para construir la imagen de oss-fuzz en docker. Esta imagen contendrá todos los archivos de nuestro proyecto.
+
+Después, construiremos los fuzzers con ```py infra/helper.py build_fuzzers deber_act3``` para generar el archivo de pruebas.
